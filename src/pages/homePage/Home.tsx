@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import SupportAndPartners from "./sections/SupportAndPartners";
 
 export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <SupportAndPartners />
+    </div>
+  );
 }

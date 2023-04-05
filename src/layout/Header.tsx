@@ -4,8 +4,8 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className={` custom-container mx-auto h-[4.5rem]`}>
-      <nav className=' flex h-full  items-center justify-between'>
+    <header className={`  h-[4.5rem] bg-secondary-200`}>
+      <nav className=' flex h-full  items-center justify-between custom-container mx-auto'>
         <div className='text-2xl font-extrabold xl:text-3xl'>
           <span className='text-btn-secondary'>CRYPTO</span>
         </div>
