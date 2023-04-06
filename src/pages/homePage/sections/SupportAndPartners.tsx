@@ -1,6 +1,6 @@
 export default function SupportAndPartners() {
   return (
-    <section className='bg-white'>
+    <section className='bg-white py-10'>
       {/* Support Section */}
       <div className='bg-secondary-100 custom-container mx-auto p-10 grid grid-cols-2 items-center gap-5 my-20 rounded-xl'>
         <div className=''>
