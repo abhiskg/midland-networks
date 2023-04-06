@@ -15,6 +15,14 @@ export default {
           300: "#2E3E8F",
           400: "#191D65",
         },
+        primaryText: {
+          100: "#888f97",
+          200: "#4F4F4F",
+        },
+        secondaryText: {
+          100: "#528bff",
+          200: "#ea3357",
+        },
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
