@@ -1,6 +1,14 @@
+import ServiceCarousel from "../../../components/carousel/ServiceCarousel";
+
 export default function Services() {
   return (
     <section className='custom-container mx-auto'>
+      <h2 className='font-medium text-3xl'>
+        Services.{" "}
+        <span className='text-primaryText-100'>Here where the fun begins.</span>
+      </h2>
+      <ServiceCarousel />
+
       {/* Main Services/ with Service blocks */}
       <h2 className='font-medium text-3xl'>
         Help is here.{" "}
