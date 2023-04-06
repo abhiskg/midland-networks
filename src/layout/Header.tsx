@@ -5,7 +5,7 @@ const Header = () => {
 
   return (
     <header className={`  h-[4.5rem] bg-secondary-200`}>
-      <nav className=' flex h-full  items-center justify-between custom-container2 mx-auto'>
+      <nav className=' flex h-full  items-center justify-between custom-container mx-auto'>
         <div>
           <img
             src='./images/logo/logo.png'
@@ -14,14 +14,16 @@ const Header = () => {
           />
         </div>
 
-        <ul className={`hidden gap-3 font-medium xl:gap-6 lg:flex  `}>
-          <li className=' cursor-pointer text-primary'>Home</li>
-          <li className=' cursor-pointer text-primary'>About</li>
-          <li className=' cursor-pointer text-primary'>Services</li>
-          <li className=' cursor-pointer text-primary'>Downloads</li>
-          <li className=' cursor-pointer text-primary'>Training Video</li>
-          <li className=' cursor-pointer text-primary'>Billing</li>
-          <li className=' cursor-pointer text-primary'>Contact Us</li>
+        <ul
+          className={`hidden gap-3 font-medium xl:gap-6 lg:flex cursor-pointer  `}
+        >
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Downloads</li>
+          <li>Training Video</li>
+          <li>Billing</li>
+          <li>Contact Us</li>
         </ul>
         <ul className='hidden items-center gap-3 font-medium lg:flex xl:gap-4'>
           <li className=' cursor-pointer rounded-md border px-3 py-1.5 text-white bg-primary-100'>
