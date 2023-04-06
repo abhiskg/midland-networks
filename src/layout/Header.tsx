@@ -5,9 +5,13 @@ const Header = () => {
 
   return (
     <header className={`  h-[4.5rem] bg-secondary-200`}>
-      <nav className=' flex h-full  items-center justify-between custom-container mx-auto'>
-        <div className='text-2xl font-extrabold xl:text-3xl'>
-          <span className='text-btn-secondary'>CRYPTO</span>
+      <nav className=' flex h-full  items-center justify-between custom-container2 mx-auto'>
+        <div>
+          <img
+            src='./images/logo/logo.png'
+            alt=''
+            className='object-contain w-20 h-auto'
+          />
         </div>
 
         <ul className={`hidden gap-3 font-medium xl:gap-6 lg:flex  `}>

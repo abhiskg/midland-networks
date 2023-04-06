@@ -5,3 +5,7 @@
 .custom-container {
   width: min(1000px, 95%);
 }
+
+.custom-container2 {
+  width: min(1150px, 95%);
+}
