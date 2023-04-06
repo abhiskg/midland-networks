@@ -10,7 +10,7 @@ const Header = () => {
           <img
             src='./images/logo/logo.png'
             alt=''
-            className='object-contain w-20 h-auto'
+            className='object-contain sm:w-20 w-14 h-auto'
           />
         </div>
 
@@ -26,12 +26,10 @@ const Header = () => {
           <li>Contact Us</li>
         </ul>
         <ul className='hidden items-center gap-3 font-medium lg:flex xl:gap-4'>
-          <li className=' cursor-pointer rounded-md border px-3 py-1.5 text-white bg-primary-100'>
+          <li className=' cursor-pointer rounded-3xl border px-4 py-1 text-white bg-primary-100'>
             Login
           </li>
-          <li className=' cursor-pointer rounded-md border bg-btn-primary px-3 py-1.5 text-primary'>
-            Sign Up
-          </li>
+          <li className=' cursor-pointer hover:text-primary-100'>Sign Up</li>
         </ul>
 
         <div
@@ -39,17 +37,17 @@ const Header = () => {
           className='z-30  flex h-5 w-8 cursor-pointer flex-col items-end justify-between lg:hidden '
         >
           <span
-            className={`rounded-lg bg-primary p-px transition-transform duration-100 ease-in-out ${
+            className={`rounded-lg bg-primary-100 p-px transition-transform duration-100 ease-in-out ${
               menu ? "w-6 translate-y-1 rotate-45" : "w-full"
             }`}
           />
           <span
-            className={`rounded-lg bg-primary p-px  ${
+            className={`rounded-lg bg-primary-100 p-px  ${
               menu ? "hidden" : "w-3/4"
             }`}
           />
           <span
-            className={`rounded-lg bg-primary p-px transition-transform duration-100 ease-in-out ${
+            className={`rounded-lg bg-primary-100 p-px transition-transform duration-100 ease-in-out ${
               menu ? "w-6 -translate-y-3.5 -rotate-45" : "w-3/6"
             }`}
           />
@@ -59,23 +57,22 @@ const Header = () => {
       {/* Mobile View */}
 
       <nav
-        className={` fixed  top-16  right-0 z-20 flex h-screen w-3/5  flex-col items-center gap-7 bg-bgPrimary p-10 font-medium  drop-shadow-md transition-transform duration-200 ease-in-out lg:hidden ${
+        className={` fixed  top-16  right-0 z-20 flex h-screen w-3/5  flex-col items-center gap-7 bg-secondary-100 p-10 font-medium  drop-shadow-md transition-transform duration-200 ease-in-out lg:hidden ${
           menu ? "translate-x-0 " : "translate-x-full"
         }`}
       >
-        <ul className='flex flex-col items-center gap-7'>
-          <li className=' cursor-pointer text-primary'>Home</li>
-          <li className=' cursor-pointer text-primary'>Shop</li>
-          <li className=' cursor-pointer text-primary'>Who we are</li>
-          <li className=' cursor-pointer text-primary'>FAQS</li>
-          <li className=' cursor-pointer text-primary'>Blog</li>
-          <li className=' cursor-pointer text-primary'>Contact Us</li>
-          <li className=' cursor-pointer rounded-md border px-3 py-1.5 text-primary'>
+        <ul className='flex flex-col items-center gap-7 cursor-pointer'>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Downloads</li>
+          <li>Training Video</li>
+          <li>Billing</li>
+          <li>Contact Us</li>
+          <li className='  rounded-3xl border px-4 py-1 text-white bg-primary-100'>
             Login
           </li>
-          <li className=' cursor-pointer rounded-md border bg-btn-primary px-3 py-1.5 text-primary'>
-            Sign Up
-          </li>
+          <li className='  hover:text-primary-100'>Sign Up</li>
         </ul>
       </nav>
     </header>
