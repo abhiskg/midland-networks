@@ -22,6 +22,7 @@ export default {
         secondaryText: {
           100: "#528bff",
           200: "#ea3357",
+          300: "#ACACAC",
         },
       },
       fontFamily: {

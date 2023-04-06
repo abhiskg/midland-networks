@@ -39,7 +39,9 @@ export default function BusinessModel() {
         </div>
         <div className='bg-white rounded-xl flex flex-col justify-between'>
           <div className='p-10'>
-            <h3 className='font-medium text-xl text-[#ACACAC]'>EXPERTISE</h3>
+            <h3 className='font-medium text-xl text-secondaryText-300'>
+              EXPERTISE
+            </h3>
             <p className='font-medium text-2xl text-primaryText-200 '>
               Over 20 years of experience.
             </p>
