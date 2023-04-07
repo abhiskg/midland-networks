@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 export default function Hero() {
   return (
     <section className=''>
-      <div className='custom-container flex flex-col justify-center  mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between'>
+      <div className='custom-container flex flex-col justify-center  mx-auto py-7 md:py-16 lg:py-32 lg:flex-row lg:justify-between'>
         <div className='flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left'>
           <h1 className='text-3xl font-medium leading-none sm:text-4xl'>
             Midland Network

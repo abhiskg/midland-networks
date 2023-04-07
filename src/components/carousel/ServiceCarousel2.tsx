@@ -34,7 +34,7 @@ export default function ServiceCarousel2() {
     ],
   };
   return (
-    <div className='mt-5 mb-14'>
+    <div className='mt-5 mb-14 md:mb-20'>
       <Slider {...settings}>
         <div className='bg-white flex flex-col p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px]  '>
           <Icon1 />

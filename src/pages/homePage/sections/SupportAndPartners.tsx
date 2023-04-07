@@ -1,20 +1,20 @@
 export default function SupportAndPartners() {
   return (
-    <section className='bg-white py-10'>
+    <section className='bg-white md:py-20 py-16'>
       {/* Support Section */}
-      <div className='bg-secondary-100 custom-container mx-auto p-10 grid grid-cols-2 items-center gap-5 my-20 rounded-xl'>
+      <div className='bg-secondary-100 custom-container mx-auto md:p-10 p-5 grid lg:grid-cols-2 grid-cols-1 items-center gap-5 md:mb-20 mb-10  rounded-xl'>
         <div className=''>
-          <h2 className='text-4xl font-medium flex flex-col'>
+          <h2 className='md:text-4xl sm:text-3xl text-2xl font-medium flex lg:flex-col flex-row flex-wrap gap-2 justify-center lg:gap-0'>
             <span>Supporting any</span> <span>business size</span>
           </h2>
-          <p className='my-8'>
+          <p className='sm:my-8 my-4 text-center lg:text-left'>
             Our clients range from small start-up businesses who just need a
             phone line and broadband, right through to national retailers who
             require multi-site business telephone systems, lease line internet
             connectivity or cloud-based data networks. So we are confident we
             will be able to help your business.
           </p>
-          <button className='bg-primary-200 text-white font-medium px-7 py-3 rounded'>
+          <button className='bg-primary-200 text-white font-medium px-7 py-3 rounded flex  justify-center lg:justify-start mx-auto lg:mx-0 '>
             Contact Us
           </button>
         </div>
@@ -23,8 +23,14 @@ export default function SupportAndPartners() {
         </div>
       </div>
 
+      <hr className='mx-auto h-0.5 bg-black custom-container mb-5' />
+
       {/* Partners */}
-      <div className='flex custom-container mx-auto gap-5 justify-between mb-10'>
+      <div className='flex custom-container mx-auto md:gap-5 gap-3 flex-wrap justify-between items-center mb-10'>
+        <div className='text-xs font-medium '>
+          MIDLAND NETWORKS <br />
+          PARTNERSHIPS
+        </div>
         <img
           src='./images/support-partners/partner-2.png'
           width={100}

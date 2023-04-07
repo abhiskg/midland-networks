@@ -30,7 +30,7 @@ export default function ServiceCarousel() {
     ],
   };
   return (
-    <div className='mt-5 mb-14'>
+    <div className='mt-5 md:mb-20 mb-14'>
       <Slider {...settings}>
         {servicesData.map((data) => (
           <ServiceCard key={data.id} data={data} />

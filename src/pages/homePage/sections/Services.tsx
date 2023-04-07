@@ -4,18 +4,18 @@ import ServiceCarousel2 from "../../../components/carousel/ServiceCarousel2";
 export default function Services() {
   return (
     <section className='custom-container mx-auto'>
-      <h2 className='font-medium text-3xl'>
+      <h2 className='font-medium md:text-3xl text-2xl'>
         Services.{" "}
         <span className='text-primaryText-100'>Here where the fun begins.</span>
       </h2>
       <ServiceCarousel />
 
       {/* Main Services/ with Service blocks */}
-      <h2 className='font-medium text-3xl'>
+      <h2 className='font-medium md:text-3xl text-2xl'>
         Help is here.{" "}
         <span className='text-primaryText-100'>Always ready for you.</span>
       </h2>
-      <div className='grid md:grid-cols-2 grid-cols-1 md:grid-rows-3 grid-rows-5 gap-5 mb-10 mt-4'>
+      <div className='grid md:grid-cols-2 grid-cols-1 md:grid-rows-3 grid-rows-5 gap-5 md:mb-20 mb-14 mt-5'>
         <div className='bg-white md:row-span-2 rounded-xl p-8 flex flex-row md:flex-col items-center md:items-baseline justify-between shadow-md'>
           <div className='flex-1'>
             <h3 className='text-secondaryText-200 font-medium text-lg '>
@@ -96,7 +96,7 @@ export default function Services() {
       </div>
 
       {/* Other Services */}
-      <h2 className='font-medium text-3xl'>
+      <h2 className='font-medium md:text-3xl text-2xl'>
         The Midland Networks difference.{" "}
         <span className='text-primaryText-100'>Thats right!</span>
       </h2>

@@ -4,7 +4,9 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className={`  h-[4.5rem] bg-secondary-200`}>
+    <header
+      className={`  h-[4.5rem] shadow-sm sticky top-0 z-30 bg-secondary-200 `}
+    >
       <nav className=' flex h-full  items-center justify-between custom-container mx-auto'>
         <div>
           <img
@@ -57,7 +59,7 @@ const Header = () => {
       {/* Mobile View */}
 
       <nav
-        className={` fixed  top-16  right-0 z-20 flex h-screen w-3/5  flex-col items-center gap-7 bg-secondary-100 p-10 font-medium  drop-shadow-md transition-transform duration-200 ease-in-out lg:hidden ${
+        className={` fixed  top-0  right-0 z-20 flex h-screen w-3/5  flex-col items-center gap-7 bg-secondary-100 p-10 font-medium  drop-shadow-md transition-transform duration-200 ease-in-out lg:hidden ${
           menu ? "translate-x-0 " : "translate-x-full"
         }`}
       >
