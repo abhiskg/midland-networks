@@ -1,4 +1,5 @@
 import ServiceCarousel from "../../../components/carousel/ServiceCarousel";
+import ServiceCarousel2 from "../../../components/carousel/ServiceCarousel2";
 
 export default function Services() {
   return (
@@ -93,6 +94,13 @@ export default function Services() {
           />
         </div>
       </div>
+
+      {/* Other Services */}
+      <h2 className='font-medium text-3xl'>
+        The Midland Networks difference.{" "}
+        <span className='text-primaryText-100'>Thats right!</span>
+      </h2>
+      <ServiceCarousel2 />
     </section>
   );
 }

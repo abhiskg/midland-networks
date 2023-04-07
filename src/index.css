@@ -14,3 +14,8 @@
 .slick-next:before {
   color: gray !important;
 }
+
+.slick-slide {
+  padding: 0 7px;
+  box-sizing: border-box;
+}
