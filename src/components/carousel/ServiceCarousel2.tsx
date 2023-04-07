@@ -36,12 +36,12 @@ export default function ServiceCarousel2() {
   return (
     <div className='mt-5 mb-14 md:mb-20'>
       <Slider {...settings}>
-        <div className='bg-white flex flex-col p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px] hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  '>
+        <div className='bg-white flex flex-col p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  '>
           <Icon1 />
           <h3 className='mt-4'>Quality assurance.</h3>
           <p className='text-secondaryText-100'>Only the best for you.</p>
         </div>
-        <div className='bg-white p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px] hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <div className='bg-white p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
           <Icon2 />
           <h3 className='mt-4'>
             Price match.{" "}
@@ -50,7 +50,7 @@ export default function ServiceCarousel2() {
             </span>
           </h3>
         </div>
-        <div className='bg-white p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px] hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <div className='bg-white p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
           <Icon3 />
           <h3 className='mt-4'>
             Customer service.{" "}
@@ -59,7 +59,7 @@ export default function ServiceCarousel2() {
             </span>
           </h3>
         </div>
-        <div className='bg-white p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px] hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <div className='bg-white p-10 rounded-xl shadow-md mr-2 text-lg font-medium h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
           <Icon4 />
           <h3 className='bg-gradient-to-r mt-4 from-[#EBA56C] to-[#67b1e4] bg-clip-text text-transparent '>
             Installation

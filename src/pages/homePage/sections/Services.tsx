@@ -1,5 +1,7 @@
 import ServiceCarousel from "../../../components/carousel/ServiceCarousel";
 import ServiceCarousel2 from "../../../components/carousel/ServiceCarousel2";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "../../../utils/motion";
 
 export default function Services() {
   return (
@@ -15,8 +17,17 @@ export default function Services() {
         Help is here.{" "}
         <span className='text-primaryText-100'>Always ready for you.</span>
       </h2>
-      <div className='grid md:grid-cols-2 grid-cols-1 md:grid-rows-3 grid-rows-5 gap-5 md:mb-20 mb-14 mt-5'>
-        <div className='bg-white md:row-span-2 rounded-xl p-8 flex flex-row md:flex-col items-center md:items-baseline justify-between shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+      <motion.div
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
+        className='grid md:grid-cols-2 grid-cols-1 md:grid-rows-3 grid-rows-5 gap-5 md:mb-20 mb-14 mt-5'
+      >
+        <motion.div
+          variants={fadeIn("right", "tween", 0.1, 0.5)}
+          className='bg-white md:row-span-2 rounded-xl p-8 flex flex-row md:flex-col items-center md:items-baseline justify-between shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
+        >
           <div className='flex-1'>
             <h3 className='text-secondaryText-200 font-medium text-lg '>
               ADVICE
@@ -30,9 +41,12 @@ export default function Services() {
             alt=''
             className='object-contain md:w-80 w-48 mx-auto h-auto md:mt-20'
           />
-        </div>
+        </motion.div>
 
-        <div className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <motion.div
+          variants={fadeIn("left", "tween", 0.1, 0.5)}
+          className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
+        >
           <div className='mt-8 ml-8'>
             <h3 className='text-secondaryText-100 font-medium text-lg'>
               TRAINING
@@ -46,9 +60,12 @@ export default function Services() {
             alt=''
             className='object-contain w-full h-auto'
           />
-        </div>
+        </motion.div>
 
-        <div className='flex justify-between items-center rounded-xl bg-white p-8 shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <motion.div
+          variants={fadeIn("left", "tween", 0.1, 0.5)}
+          className='flex justify-between items-center rounded-xl bg-white p-8 shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
+        >
           <div>
             <h3 className=' font-medium text-lg'>SUPPORT</h3>
             <p className=' font-medium text-lg text-primaryText-200 mt-2'>
@@ -62,9 +79,12 @@ export default function Services() {
             alt=''
             className='object-contain w-28 h-auto'
           />
-        </div>
+        </motion.div>
 
-        <div className='flex justify-between items-center bg-white rounded-xl shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <motion.div
+          variants={fadeIn("up", "tween", 0.3, 0.5)}
+          className='flex justify-between items-center bg-white rounded-xl shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
+        >
           <div className='ml-8'>
             <h3 className='text-secondaryText-100 font-medium text-lg'>
               MESSAGING
@@ -78,9 +98,12 @@ export default function Services() {
             alt=''
             className='object-contain w-40'
           />
-        </div>
+        </motion.div>
 
-        <div className='flex justify-between items-center bg-white rounded-xl shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <motion.div
+          variants={fadeIn("up", "tween", 0.3, 0.5)}
+          className='flex justify-between items-center bg-white rounded-xl shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
+        >
           <div className='ml-8'>
             <h3 className='text-[#04D2FF] font-medium text-lg'>GUIDANCE</h3>
             <p className=' font-medium text-lg text-primaryText-200 mt-2'>
@@ -92,8 +115,8 @@ export default function Services() {
             alt=''
             className='object-contain w-48'
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Other Services */}
       <h2 className='font-medium md:text-3xl text-2xl'>

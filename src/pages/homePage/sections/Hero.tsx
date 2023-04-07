@@ -1,14 +1,27 @@
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "../../../utils/motion";
 
 export default function Hero() {
   return (
-    <section className=''>
-      <div className='custom-container flex flex-col justify-center  mx-auto py-7 md:py-16 lg:py-32 lg:flex-row lg:justify-between'>
+    <motion.section
+      variants={staggerContainer()}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: true, amount: 0.25 }}
+    >
+      <div className='custom-container flex flex-col justify-center min-h-screen mx-auto py-7 md:py-16 lg:py-32 lg:flex-row lg:justify-between'>
         <div className='flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left'>
-          <h1 className='text-3xl font-medium leading-none sm:text-4xl'>
+          <motion.h1
+            variants={fadeIn("right", "tween", 0.1, 1)}
+            className='text-3xl font-medium leading-none sm:text-4xl'
+          >
             Midland Network
-          </h1>
-          <h2 className='text-3xl justify-center lg:justify-start font-medium leading-none sm:text-4xl flex gap-1 mt-2'>
+          </motion.h1>
+          <motion.h2
+            variants={fadeIn("right", "tween", 0.3, 1)}
+            className='text-3xl justify-center lg:justify-start font-medium leading-none sm:text-4xl flex gap-1 mt-2'
+          >
             We are
             <div className='text-primary-100'>
               <Typewriter
@@ -26,14 +39,20 @@ export default function Hero() {
                 }}
               />
             </div>
-          </h2>
-          <p className='mt-6 mb-8 font-serif sm:mb-12'>
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("up", "tween", 0.4, 1)}
+            className='mt-6 mb-8 font-serif sm:mb-12'
+          >
             Midland Networks started life as a telecom company and it's still
             the major part of our business. We have expanded our services over
             the years at customer request to offer related services, providing
             our customers with one port of call.
-          </p>
-          <div className='flex sm:items-center justify-center space-x-4 lg:justify-start'>
+          </motion.p>
+          <motion.div
+            variants={fadeIn("up", "tween", 0.6, 1)}
+            className='flex sm:items-center justify-center space-x-4 lg:justify-start'
+          >
             <a
               rel='noopener noreferrer'
               href='#'
@@ -48,16 +67,19 @@ export default function Hero() {
             >
               GET IN TOUCH
             </a>
-          </div>
+          </motion.div>
         </div>
-        <div className='flex items-center justify-center  mt-8 lg:mt-0 '>
+        <motion.div
+          variants={fadeIn("left", "tween", 0.3, 1)}
+          className='flex items-center justify-center  mt-8 lg:mt-0 '
+        >
           <img
             src='./images/hero/hero.jpg'
             alt=''
             className='object-contain w-80 md:w-[30rem] h-auto'
           />
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

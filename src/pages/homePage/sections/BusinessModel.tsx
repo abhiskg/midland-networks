@@ -17,7 +17,7 @@ export default function BusinessModel() {
       </h2>
 
       <div className='grid md:grid-cols-2 grid-cols-1 gap-5 md:grid-rows-2 mt-5 mb-10 md:mb-16'>
-        <div className='md:col-span-2 bg-white rounded-xl grid md:grid-cols-2 grid-cols-1 shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  overflow-hidden'>
+        <div className='md:col-span-2 bg-white rounded-xl grid md:grid-cols-2 grid-cols-1 shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  overflow-hidden'>
           <div className='flex flex-col justify-center items-center p-10'>
             <h3 className='font-medium text-xl text-secondaryText-100'>
               TRUST
@@ -32,7 +32,7 @@ export default function BusinessModel() {
             className='w-full md:h-full h-40 md:object-contain'
           />
         </div>
-        <div className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <div className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
           <div>
             <h3 className='font-medium text-xl text-secondaryText-200 text-center mt-10'>
               PASSION
@@ -47,7 +47,7 @@ export default function BusinessModel() {
             className='object-contain w-full h-auto'
           />
         </div>
-        <div className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        <div className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
           <div className='p-10'>
             <h3 className='font-medium text-xl text-secondaryText-300'>
               EXPERTISE
