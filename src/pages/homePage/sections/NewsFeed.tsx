@@ -9,7 +9,7 @@ export default function NewsFeed() {
       </p>
 
       {/* Grid Block Sec */}
-      <div className='grid md:grid-cols-3 grid-cols-1 grid-rows-3 md:grid-rows-1 gap-5 mt-7 mt-10'>
+      <div className='grid md:grid-cols-3 grid-cols-1 grid-rows-3 md:grid-rows-1 gap-5 mt-7 md:mt-10'>
         <div className='md:col-span-3 grid grid-cols-2 '>
           <div className='bg-[#D7657F] rounded-l-xl flex items-center sm:pl-10 pl-5 relative'>
             <h3 className='text-white md:text-4xl sm:text-3xl text-2xl font-medium'>
