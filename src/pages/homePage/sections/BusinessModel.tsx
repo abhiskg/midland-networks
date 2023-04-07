@@ -1,8 +1,18 @@
+import AwardsCarousel from "../../../components/carousel/AwardsCarousel";
+
 export default function BusinessModel() {
   return (
     <div className='custom-container mx-auto py-10'>
+      {/*Award/Recognition */}
       <h2 className='font-medium text-3xl'>
-        Our belives.{" "}
+        Award winning service.{" "}
+        <span className='text-primaryText-100'>National recognition.</span>
+      </h2>
+      <AwardsCarousel />
+
+      {/* Way of Business */}
+      <h2 className='font-medium text-3xl'>
+        Our believes.{" "}
         <span className='text-primaryText-100'>The way we do business.</span>
       </h2>
 
