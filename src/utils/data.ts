@@ -32,3 +32,22 @@ export const servicesData = [
     images: "./images/services/connectivity.png",
   },
 ];
+
+export const testimonialData = [
+  {
+    id: "1",
+    name: "West Midland",
+    title: "Oh. So. Pro.",
+    image: "./images/testimonial/testimonial.png",
+  },
+  {
+    id: "2",
+    name: "Fire Service",
+    image: "./images/testimonial/testimonial.png",
+  },
+  {
+    id: "3",
+    name: "Whitley Tandoori Ltd",
+    image: "./images/testimonial/testimonial.png",
+  },
+];

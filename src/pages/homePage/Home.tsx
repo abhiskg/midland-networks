@@ -4,6 +4,7 @@ import BusinessModel from "./sections/BusinessModel";
 import NewsFeed from "./sections/NewsFeed";
 import Services from "./sections/Services";
 import Hero from "./sections/Hero";
+import Testimonial from "./sections/Testimonial";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Services />
       <SupportAndPartners />
+      <Testimonial />
       <BusinessModel />
       <NewsFeed />
     </div>
