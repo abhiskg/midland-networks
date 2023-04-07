@@ -8,7 +8,9 @@ export default function TestimonialCarousel() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 800,
+    autoplaySpeed: 2500,
     initialSlide: 0,
     slidesToShow: 1,
     slidesToScroll: 1,

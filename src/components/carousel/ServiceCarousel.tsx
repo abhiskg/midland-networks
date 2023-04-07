@@ -8,10 +8,12 @@ export default function ServiceCarousel() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     initialSlide: 0,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 800,
+    autoplaySpeed: 2500,
     responsive: [
       {
         breakpoint: 900,

@@ -25,7 +25,7 @@ export default function Services() {
         className='grid md:grid-cols-2 grid-cols-1 md:grid-rows-3 grid-rows-5 gap-5 md:mb-20 mb-14 mt-5'
       >
         <motion.div
-          variants={fadeIn("right", "tween", 0.1, 0.5)}
+          variants={fadeIn("right", "tween", 0.1, 0.8)}
           className='bg-white md:row-span-2 rounded-xl p-8 flex flex-row md:flex-col items-center md:items-baseline justify-between shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
         >
           <div className='flex-1'>
@@ -44,7 +44,7 @@ export default function Services() {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("left", "tween", 0.1, 0.5)}
+          variants={fadeIn("left", "tween", 0.1, 0.8)}
           className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
         >
           <div className='mt-8 ml-8'>
@@ -63,7 +63,7 @@ export default function Services() {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("left", "tween", 0.1, 0.5)}
+          variants={fadeIn("up", "tween", 0.1, 0.8)}
           className='flex justify-between items-center rounded-xl bg-white p-8 shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
         >
           <div>
@@ -82,7 +82,7 @@ export default function Services() {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("up", "tween", 0.3, 0.5)}
+          variants={fadeIn("up", "tween", 0.3, 0.8)}
           className='flex justify-between items-center bg-white rounded-xl shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
         >
           <div className='ml-8'>
@@ -101,7 +101,7 @@ export default function Services() {
         </motion.div>
 
         <motion.div
-          variants={fadeIn("up", "tween", 0.3, 0.5)}
+          variants={fadeIn("up", "tween", 0.3, 0.8)}
           className='flex justify-between items-center bg-white rounded-xl shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
         >
           <div className='ml-8'>

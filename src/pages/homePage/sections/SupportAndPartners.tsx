@@ -26,47 +26,48 @@ export default function SupportAndPartners() {
       <hr className='mx-auto h-0.5 bg-black custom-container mb-5' />
 
       {/* Partners */}
-      <div className='flex custom-container mx-auto md:gap-5 gap-3 flex-wrap justify-between items-center mb-10'>
-        <div className='text-xs font-medium '>
-          MIDLAND NETWORKS <br />
-          PARTNERSHIPS
+      <div className='custom-container mx-auto'>
+        <h2 className='font-medium  text-2xl text-center mb-10'>
+          Midland Networks Partnership
+        </h2>
+        <div className='grid md:grid-cols-6 grid-cols-3 items-center place-items-center md:gap-5 gap-3 mb-10'>
+          <img
+            src='./images/support-partners/partner-2.png'
+            width={100}
+            alt=''
+            className='h-auto object-contain'
+          />
+          <img
+            src='./images/support-partners/partner-4.png'
+            width={100}
+            alt=''
+            className='h-auto object-contain'
+          />
+          <img
+            src='./images/support-partners/partner-3.png'
+            width={100}
+            alt=''
+            className='h-auto object-contain'
+          />
+          <img
+            src='./images/support-partners/partner-5.png'
+            width={100}
+            alt=''
+            className='h-auto object-contain'
+          />
+          <img
+            src='./images/support-partners/partner-6.png'
+            width={100}
+            alt=''
+            className='h-auto object-contain'
+          />
+          <img
+            src='./images/support-partners/partner-1.png'
+            width={100}
+            alt=''
+            className='h-auto object-contain'
+          />
         </div>
-        <img
-          src='./images/support-partners/partner-2.png'
-          width={100}
-          alt=''
-          className='h-auto object-contain'
-        />
-        <img
-          src='./images/support-partners/partner-4.png'
-          width={100}
-          alt=''
-          className='h-auto object-contain'
-        />
-        <img
-          src='./images/support-partners/partner-3.png'
-          width={100}
-          alt=''
-          className='h-auto object-contain'
-        />
-        <img
-          src='./images/support-partners/partner-5.png'
-          width={100}
-          alt=''
-          className='h-auto object-contain'
-        />
-        <img
-          src='./images/support-partners/partner-6.png'
-          width={100}
-          alt=''
-          className='h-auto object-contain'
-        />
-        <img
-          src='./images/support-partners/partner-1.png'
-          width={100}
-          alt=''
-          className='h-auto object-contain'
-        />
       </div>
     </section>
   );

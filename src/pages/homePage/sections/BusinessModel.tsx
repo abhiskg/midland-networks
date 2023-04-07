@@ -1,4 +1,6 @@
 import AwardsCarousel from "../../../components/carousel/AwardsCarousel";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "../../../utils/motion";
 
 export default function BusinessModel() {
   return (
@@ -16,8 +18,17 @@ export default function BusinessModel() {
         <span className='text-primaryText-100'>The way we do business.</span>
       </h2>
 
-      <div className='grid md:grid-cols-2 grid-cols-1 gap-5 md:grid-rows-2 mt-5 mb-10 md:mb-16'>
-        <div className='md:col-span-2 bg-white rounded-xl grid md:grid-cols-2 grid-cols-1 shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  overflow-hidden'>
+      <motion.div
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
+        className='grid md:grid-cols-2 grid-cols-1 gap-5 md:grid-rows-2 mt-5 mb-10 md:mb-16'
+      >
+        <motion.div
+          variants={fadeIn("up", "tween", 0.1, 0.8)}
+          className='md:col-span-2 bg-white rounded-xl grid md:grid-cols-2 grid-cols-1 shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  overflow-hidden'
+        >
           <div className='flex flex-col justify-center items-center p-10'>
             <h3 className='font-medium text-xl text-secondaryText-100'>
               TRUST
@@ -31,8 +42,12 @@ export default function BusinessModel() {
             alt=''
             className='w-full md:h-full h-40 md:object-contain'
           />
-        </div>
-        <div className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn("right", "tween", 0.3, 0.8)}
+          className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
+        >
           <div>
             <h3 className='font-medium text-xl text-secondaryText-200 text-center mt-10'>
               PASSION
@@ -46,8 +61,12 @@ export default function BusinessModel() {
             alt=''
             className='object-contain w-full h-auto'
           />
-        </div>
-        <div className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn("left", "tween", 0.3, 0.8)}
+          className='bg-white rounded-xl flex flex-col justify-between overflow-hidden shadow-md hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '
+        >
           <div className='p-10'>
             <h3 className='font-medium text-xl text-secondaryText-300'>
               EXPERTISE
@@ -61,8 +80,8 @@ export default function BusinessModel() {
             className='object-contain h-auto w-48 self-center'
             alt=''
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <div className='text-center lg:text-4xl sm:text-3xl text-2xl font-semibold'>
         Let's Connect
