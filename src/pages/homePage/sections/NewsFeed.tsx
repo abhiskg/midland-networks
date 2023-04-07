@@ -10,8 +10,8 @@ export default function NewsFeed() {
 
       {/* Grid Block Sec */}
       <div className='grid md:grid-cols-3 grid-cols-1 grid-rows-3 md:grid-rows-1 gap-5 mt-7 md:mt-10'>
-        <div className='md:col-span-3 grid grid-cols-2 '>
-          <div className='bg-[#D7657F] rounded-l-xl flex items-center sm:pl-10 pl-5 relative'>
+        <div className='md:col-span-3 grid grid-cols-2 shadow-md rounded-xl hover:scale-[1.01] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out overflow-hidden '>
+          <div className='bg-[#D7657F] rounded-l-xl flex items-center sm:pl-10 pl-5 relative overflow-hidden '>
             <h3 className='text-white md:text-4xl sm:text-3xl text-2xl font-medium'>
               Paying too
               <br />
@@ -32,7 +32,7 @@ export default function NewsFeed() {
           </div>
         </div>
 
-        <div className=''>
+        <div className='hover:scale-[1.02] hover:shadow-lg shadow-md rounded-xl cursor-pointer transition-transform duration-300 ease-out overflow-hidden'>
           <img
             src='./images/newsfeed/server.png'
             className='rounded-t-xl sm:object-contain w-full sm:h-auto h-44'
@@ -50,14 +50,14 @@ export default function NewsFeed() {
           </div>
         </div>
 
-        <div className='bg-[#285883] rounded-xl relative pb-3 md:h-auto  text-white flex justify-center items-center'>
+        <div className='bg-[#285883] rounded-xl relative pb-3 md:h-auto  text-white flex justify-center items-center shadow-md hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
           <h3 className='font-bold text-xl '>Midland HVS</h3>
           <small className='absolute cursor-pointer bottom-8 border-2 border-white px-5 py-2 uppercase font-medium'>
             Training Videos
           </small>
         </div>
 
-        <div className='h-full'>
+        <div className='h-full shadow-md rounded-xl overflow-hidden hover:scale-[1.02] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
           <img
             src='./images/newsfeed/installer.png'
             alt=''
