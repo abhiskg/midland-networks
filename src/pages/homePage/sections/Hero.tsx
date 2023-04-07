@@ -31,7 +31,6 @@ export default function Hero() {
                     "Data Cabler",
                     "Passionate",
                     "Experienced",
-                    "Telecom Providers",
                     "Engineers",
                   ],
                   autoStart: true,
