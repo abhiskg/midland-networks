@@ -3,6 +3,7 @@ import ServiceCarousel2 from "../../../components/carousel/ServiceCarousel2";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../../../utils/motion";
 import ServiceSlider from "../../../components/slider/ServiceSlider";
+import ServiceSlider2 from "../../../components/slider/ServiceSlider2";
 
 export default function Services() {
   return (
@@ -123,11 +124,12 @@ export default function Services() {
       </div>
 
       {/* Other Services */}
-      <h2 className='font-medium md:text-3xl text-2xl'>
+      <h2 className='font-medium md:text-3xl text-2xl  custom-container mx-auto'>
         The Midland Networks difference.{" "}
         <span className='text-primaryText-100'>Thats right!</span>
       </h2>
-      <ServiceCarousel2 />
+      {/* <ServiceCarousel2 /> */}
+      <ServiceSlider2 />
     </section>
   );
 }
