@@ -1,11 +1,11 @@
 import { useSwipeable } from "react-swipeable";
-import Icon1 from "../../icons/Icon1";
-import Icon2 from "../../icons/Icon2";
-import Icon3 from "../../icons/Icon3";
-import Icon4 from "../../icons/Icon4";
 import { useState } from "react";
+import Icon5 from "../../icons/Icon5";
+import Icon6 from "../../icons/Icon6";
+import Icon7 from "../../icons/Icon7";
+import Icon8 from "../../icons/Icon8";
 
-export default function ServiceSlider2() {
+export default function AwardsSlider() {
   const [slidePosition, setSlidePosition] = useState(0);
 
   const handlePrevArrow = () => {
@@ -43,38 +43,36 @@ export default function ServiceSlider2() {
       <div className='relative h-[240px] custom-container mx-auto'>
         <div
           {...handlers}
-          style={{ transform: `translateX(-${slidePosition * 22}%)` }}
+          style={{ transform: `translateX(-${slidePosition * 20}%)` }}
           className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-500`}
         >
-          <div className='bg-white flex flex-col p-10 rounded-xl shadow-md  text-lg font-medium h-[240px] w-[18.5rem] my-2 hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  '>
-            <Icon1 />
-            <h3 className='mt-4'>Quality assurance.</h3>
-            <p className='text-secondaryText-100'>Only the best for you.</p>
+          <div className='bg-white flex flex-col p-10 rounded-xl shadow-md my-2 w-[18.5rem] text-lg h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out   '>
+            <Icon5 />
+            <h3 className='mt-4'>2018</h3>
+            <p className='text-secondaryText-100 mt-1 font-medium'>
+              Cloud Solutions
+            </p>
           </div>
-          <div className='bg-white p-10 rounded-xl shadow-md  text-lg font-medium h-[240px] w-[18.5rem] my-2 hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
-            <Icon2 />
-            <h3 className='mt-4'>
-              Price match.{" "}
-              <span className='text-secondaryText-200'>
-                Quality great deals promise.
-              </span>
-            </h3>
+          <div className='bg-white p-10 rounded-xl shadow-md my-2 w-[18.5rem] text-lg h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  '>
+            <Icon6 />
+            <h3 className='mt-4'>2018</h3>
+            <p className='text-secondaryText-200 mt-1 font-medium'>
+              SME Solutions
+            </p>
           </div>
-          <div className='bg-white p-10 rounded-xl shadow-md  text-lg font-medium h-[240px] w-[18.5rem] my-2 hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
-            <Icon3 />
-            <h3 className='mt-4'>
-              Customer service.{" "}
-              <span className='text-secondaryText-100'>
-                More than just shopping.
-              </span>
-            </h3>
+          <div className='bg-white p-10 rounded-xl shadow-md my-2 w-[18.5rem] text-lg h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  '>
+            <Icon7 />
+            <h3 className='mt-4'>2018 Best</h3>
+            <p className='text-secondaryText-100 mt-1 font-medium'>
+              Customer award
+            </p>
           </div>
-          <div className='bg-white p-10 rounded-xl shadow-md  text-lg font-medium h-[240px] w-[18.5rem] my-2 hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out '>
-            <Icon4 />
+          <div className='bg-white p-10 rounded-xl shadow-md my-2 w-[18.5rem] text-lg h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  '>
+            <Icon8 />
             <h3 className='bg-gradient-to-r mt-4 from-[#EBA56C] to-[#67b1e4] bg-clip-text text-transparent '>
-              Installation
+              2017 Best
             </h3>
-            <p>and exceed this industry standards</p>
+            <p className=' mt-1 font-medium'>SME UC solutions</p>
           </div>
         </div>
 

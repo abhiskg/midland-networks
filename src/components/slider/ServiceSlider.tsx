@@ -7,12 +7,24 @@ const ServiceSlider = () => {
   const [slidePosition, setSlidePosition] = useState(0);
 
   const handlePrevArrow = () => {
+    if (window.innerWidth < 500 && slidePosition < 4) {
+      return setSlidePosition((prev) => prev + 1);
+    }
+    if (window.innerWidth < 900 && slidePosition < 3) {
+      return setSlidePosition((prev) => prev + 1);
+    }
     if (slidePosition < 2) {
       setSlidePosition((prev) => prev + 1);
     }
   };
 
   const handleNextArrow = () => {
+    if (window.innerWidth < 500 && slidePosition > 0 && slidePosition <= 4) {
+      return setSlidePosition((prev) => prev - 1);
+    }
+    if (window.innerWidth < 900 && slidePosition > 0 && slidePosition <= 3) {
+      return setSlidePosition((prev) => prev - 1);
+    }
     if (slidePosition > 0 && slidePosition <= 2) {
       setSlidePosition((prev) => prev - 1);
     }
