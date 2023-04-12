@@ -8,6 +8,15 @@ import Icon8 from "../../icons/Icon8";
 export default function AwardsSlider() {
   const [slidePosition, setSlidePosition] = useState(0);
 
+  const handleMouseMove = (e: any) => {
+    if (e.clientX > window.innerWidth / 2) {
+      return handleNextArrow();
+    }
+    if (e.clientX < window.innerWidth / 2) {
+      return handlePrevArrow();
+    }
+  };
+
   const handlePrevArrow = () => {
     if (window.innerWidth < 500 && slidePosition < 3) {
       return setSlidePosition((prev) => prev + 1);
@@ -40,11 +49,14 @@ export default function AwardsSlider() {
 
   return (
     <div className='relative group mt-5 md:mb-20 mb-14'>
-      <div className='relative h-[240px] custom-container mx-auto'>
+      <div
+        onMouseMove={handleMouseMove}
+        className='relative h-[240px] custom-container mx-auto'
+      >
         <div
           {...handlers}
           style={{ transform: `translateX(-${slidePosition * 20}%)` }}
-          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-500`}
+          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-[1500ms]`}
         >
           <div className='bg-white flex flex-col p-10 rounded-xl shadow-md my-2 w-[18.5rem] text-lg h-[240px] hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out   '>
             <Icon5 />

@@ -6,6 +6,15 @@ import { useSwipeable } from "react-swipeable";
 const ServiceSlider = () => {
   const [slidePosition, setSlidePosition] = useState(0);
 
+  const handleMouseMove = (e: any) => {
+    if (e.clientX > window.innerWidth / 2) {
+      return handleNextArrow();
+    }
+    if (e.clientX < window.innerWidth / 2) {
+      return handlePrevArrow();
+    }
+  };
+
   const handlePrevArrow = () => {
     if (window.innerWidth < 500 && slidePosition < 4) {
       return setSlidePosition((prev) => prev + 1);
@@ -14,7 +23,7 @@ const ServiceSlider = () => {
       return setSlidePosition((prev) => prev + 1);
     }
     if (slidePosition < 2) {
-      setSlidePosition((prev) => prev + 1);
+      return setSlidePosition((prev) => prev + 1);
     }
   };
 
@@ -26,7 +35,7 @@ const ServiceSlider = () => {
       return setSlidePosition((prev) => prev - 1);
     }
     if (slidePosition > 0 && slidePosition <= 2) {
-      setSlidePosition((prev) => prev - 1);
+      return setSlidePosition((prev) => prev - 1);
     }
   };
 
@@ -38,11 +47,14 @@ const ServiceSlider = () => {
 
   return (
     <div className='relative group mt-5'>
-      <div className='relative h-[30rem] custom-container mx-auto'>
+      <div
+        onMouseMove={handleMouseMove}
+        className='relative h-[30rem] custom-container mx-auto'
+      >
         <div
           {...handlers}
           style={{ transform: `translateX(-${slidePosition * 20}%)` }}
-          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-500`}
+          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-[1500ms]`}
         >
           {servicesData.map((data) => (
             <ServiceCard key={data.id} data={data} />

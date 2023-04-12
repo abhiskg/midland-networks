@@ -8,6 +8,15 @@ import { useState } from "react";
 export default function ServiceSlider2() {
   const [slidePosition, setSlidePosition] = useState(0);
 
+  const handleMouseMove = (e: any) => {
+    if (e.clientX > window.innerWidth / 2) {
+      return handleNextArrow();
+    }
+    if (e.clientX < window.innerWidth / 2) {
+      return handlePrevArrow();
+    }
+  };
+
   const handlePrevArrow = () => {
     if (window.innerWidth < 500 && slidePosition < 3) {
       return setSlidePosition((prev) => prev + 1);
@@ -40,11 +49,14 @@ export default function ServiceSlider2() {
 
   return (
     <div className='relative group mt-5 md:mb-20 mb-14'>
-      <div className='relative h-[240px] custom-container mx-auto'>
+      <div
+        onMouseMove={handleMouseMove}
+        className='relative h-[240px] custom-container mx-auto'
+      >
         <div
           {...handlers}
           style={{ transform: `translateX(-${slidePosition * 22}%)` }}
-          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-500`}
+          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-[1500ms]`}
         >
           <div className='bg-white flex flex-col p-10 rounded-xl shadow-md  text-lg font-medium h-[240px] w-[18.5rem] my-2 hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  '>
             <Icon1 />
