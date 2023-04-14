@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { type WheelEvent, useState } from "react";
 import { servicesData } from "../../utils/data";
 import ServiceCard from "../cards/ServiceCard";
 import { useSwipeable } from "react-swipeable";
@@ -6,11 +6,11 @@ import { useSwipeable } from "react-swipeable";
 const ServiceSlider = () => {
   const [slidePosition, setSlidePosition] = useState(0);
 
-  const handleMouseMove = (e: any) => {
-    if (e.clientX > window.innerWidth / 2) {
+  const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
+    if (e.deltaX < 0) {
       return handleNextArrow();
     }
-    if (e.clientX < window.innerWidth / 2) {
+    if (e.deltaX > 0) {
       return handlePrevArrow();
     }
   };
@@ -48,13 +48,13 @@ const ServiceSlider = () => {
   return (
     <div className='relative group mt-5'>
       <div
-        onMouseMove={handleMouseMove}
+        onWheel={handleWheel}
         className='relative h-[30rem] custom-container mx-auto'
       >
         <div
           {...handlers}
           style={{ transform: `translateX(-${slidePosition * 20}%)` }}
-          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-[1500ms]`}
+          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-700`}
         >
           {servicesData.map((data) => (
             <ServiceCard key={data.id} data={data} />

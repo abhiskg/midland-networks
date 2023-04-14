@@ -3,16 +3,16 @@ import Icon1 from "../../icons/Icon1";
 import Icon2 from "../../icons/Icon2";
 import Icon3 from "../../icons/Icon3";
 import Icon4 from "../../icons/Icon4";
-import { useState } from "react";
+import { type WheelEvent, useState } from "react";
 
 export default function ServiceSlider2() {
   const [slidePosition, setSlidePosition] = useState(0);
 
-  const handleMouseMove = (e: any) => {
-    if (e.clientX > window.innerWidth / 2) {
+  const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
+    if (e.deltaX < 0) {
       return handleNextArrow();
     }
-    if (e.clientX < window.innerWidth / 2) {
+    if (e.deltaX > 0) {
       return handlePrevArrow();
     }
   };
@@ -50,13 +50,13 @@ export default function ServiceSlider2() {
   return (
     <div className='relative group mt-5 md:mb-20 mb-14'>
       <div
-        onMouseMove={handleMouseMove}
+        onWheel={handleWheel}
         className='relative h-[240px] custom-container mx-auto'
       >
         <div
           {...handlers}
           style={{ transform: `translateX(-${slidePosition * 22}%)` }}
-          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-[1500ms]`}
+          className={`flex items-center  gap-5 overflow-hidden absolute transition-transform duration-700`}
         >
           <div className='bg-white flex flex-col p-10 rounded-xl shadow-md  text-lg font-medium h-[240px] w-[18.5rem] my-2 hover:scale-[1.015] hover:shadow-lg cursor-pointer transition-transform duration-300 ease-out  '>
             <Icon1 />
