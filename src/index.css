@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overscroll-behavior-x: none;
+}
+body {
+  overscroll-behavior-x: none;
+}
+
 .custom-container {
   width: min(1000px, 95%);
 }

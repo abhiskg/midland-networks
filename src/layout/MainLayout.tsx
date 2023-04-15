@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 export const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className='overscroll-x-none'>
+    <div>
       <Header />
       {children}
       <Footer />
