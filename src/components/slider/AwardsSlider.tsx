@@ -10,11 +10,9 @@ export default function AwardsSlider() {
 
   const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
     if (e.deltaX < 0) {
-      e.preventDefault();
       return handleNextArrow();
     }
     if (e.deltaX > 0) {
-      e.preventDefault();
       return handlePrevArrow();
     }
   };
@@ -50,7 +48,7 @@ export default function AwardsSlider() {
   });
 
   return (
-    <div className='relative group mt-5 md:mb-20 mb-14'>
+    <div className='relative group mt-5 md:mb-20 mb-14 '>
       <div
         onWheel={handleWheel}
         className='relative h-[240px] custom-container mx-auto'
