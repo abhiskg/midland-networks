@@ -10,9 +10,11 @@ export default function AwardsSlider() {
 
   const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
     if (e.deltaX < 0) {
+      e.preventDefault();
       return handleNextArrow();
     }
     if (e.deltaX > 0) {
+      e.preventDefault();
       return handlePrevArrow();
     }
   };
