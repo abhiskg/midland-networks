@@ -4,9 +4,11 @@
 
 html {
   overscroll-behavior-x: none;
+  overflow-x: hidden;
 }
 body {
   overscroll-behavior-x: none;
+  overflow-x: hidden;
 }
 
 .custom-container {
